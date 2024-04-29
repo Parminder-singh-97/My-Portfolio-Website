@@ -125,6 +125,6 @@ gsap.from(".contactMe_1", {
     scroller: "body",
     start: "top 90%",
     end: "bottom 90%",
-    scrub: 2,
+    
   },
 });
