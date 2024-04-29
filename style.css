@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary_font: "Poppins", sans-serif;
+  --secondary_font: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body {
+  background: url(/assets/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -10;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* nav____________________________ */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-bars {
+  display: none !important;
+  color: #e5edf5;
+  
+  font-size: 2rem;
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav img {
+  width: 190px;
+  height: 150px;
+}
+nav ul {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+nav ul li {
+  list-style: none;
+
+  padding-left: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--primary_font);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  color: rgb(144, 31, 31);
+}
+
+/* landing page  left & right */
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 0 2.5rem;
+}
+main .right_side {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .left_side {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 550px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.left_side h3 {
+  font-family: var(--secondary_font);
+  color: blanchedalmond;
+}
+.left_side h1 {
+  margin-top: 1rem;
+  color: white;
+  font-size: 4vw;
+  line-height: 60px;
+  font-family: var(--primary_font);
+  padding-bottom: 5px;
+}
+.left_side h1 span {
+  color: rgb(144, 31, 31);
+  filter: drop-shadow(2px 2px 1px #ffffff);
+  font-size: 5vw;
+
+  font-family: var(--primary_font);
+}
+.left_side h2 {
+  color: blanchedalmond;
+  font-family: var(--primary_font);
+  font-size: 2rem;
+}
+.left_side p {
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  font-family: var(--secondary_font);
+  width: 55%;
+}
+#element {
+  font-size: 4vh;
+}
+
+/* button_____________________ */
+
+.btn {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+button {
+  cursor: pointer;
+  font-family: var(--primary_font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #7e97b8;
+  background-color: #e0e8ef;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: rgba(255, 255, 255, 0.333);
+  border-radius: 40px 40px 40px 40px;
+  padding: 10px 20px;
+  transform: translate(0px, 0px) rotate(0deg);
+  transition: 0.2s;
+  box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+button:hover {
+  color: #516d91;
+  background-color: #e5edf5;
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+.hero {
+  width: 80%;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero img {
+  object-fit: contain;
+  min-width: 250px;
+  max-width: 350px;
+  filter: drop-shadow(0px 1px 7px #ffffff);
+}
+
+/* menu--------------00 */
+
+.menu_box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  top: -70%;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+
+  height: 60vh;
+  z-index: 10;
+  color: black;
+  border-radius: 5px;
+  transition: all 1s ease-in-out;
+}
+.cross {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-right: 4rem;
+}
+.fa-xmark {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+
+  right: 10;
+  top: 10;
+}
+.menu_box ul {
+  color: black;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  flex-direction: column;
+}
+.menu_box ul li {
+  list-style: none;
+  border-bottom: #516d91;
+}
+.menu_box ul li a {
+  font-size: 4vh;
+  font-family: var(--primary_font);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+.menu_box ul li a:hover {
+  color: red;
+  border-bottom: 4px solid black;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .left_side {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 400px;
+    padding-left: 0rem;
+    padding-top: 6rem;
+    order: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fa-bars {
+    display: flex !important;
+    color: #e5edf5;
+    
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .hero {
+    width: 80%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .left_side h2 {
+    text-align: center;
+  }
+
+  .left_side p {
+    width: 100%;
+  }
+  main .right_side {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  nav ul {
+    display: none;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 430px) {
+  main .left_side {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 400px;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    order: 2;
+}
+.left_side h1 {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+  font-size: 6vw;
+  line-height: 40px;
+  font-family: var(--primary_font);
+  padding-bottom: 5px;
+  
+}
+.left_side h1 span {
+  color: rgb(144, 31, 31);
+  filter: drop-shadow(2px 2px 1px #ffffff);
+  font-size: 8vw;
+  font-family: var(--primary_font);
+
+}
+.left_side h3 {
+  font-family: var(--secondary_font);
+  color: blanchedalmond;
+  text-align: center;
+}
+}
