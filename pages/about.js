@@ -123,8 +123,8 @@ gsap.from(".contactMe_1", {
   scrollTrigger: {
     trigger: ".contactMe_1",
     scroller: "body",
-    start: "top 70%",
-    end: "bottom 70%",
+    start: "top 90%",
+    end: "bottom 90%",
     scrub: 2,
   },
 });
