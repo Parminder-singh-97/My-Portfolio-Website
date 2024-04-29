@@ -21,7 +21,7 @@ body {
 }
 
 body {
-  background: url(/assets/bg2.webp) fixed;
+  background: url("./assets/bg2.webp") fixed;
   background-size: cover;
   background-position: center;
   position: relative;
