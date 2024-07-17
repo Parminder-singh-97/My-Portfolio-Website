@@ -2,6 +2,10 @@
 
 Welcome to Parminder Singh's Portfolio repository! This project showcases Parminder Singh's personal website and JavaScript projects, built with GSAP, HTML, CSS, and JavaScript.
 
+
+![portfolio](https://github.com/user-attachments/assets/728819e7-84df-4b66-812b-c2db9e463409)
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
