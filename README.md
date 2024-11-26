@@ -29,5 +29,5 @@ This section showcases Parminder Singh's JavaScript projects, demonstrating thei
 
 
 
-https://github.com/Parminder-singh-97/My-Portfolio-Website.git
+[https://github.com/Parminder-singh-97/My-Portfolio-Website.git](https://parminder-singh-97.github.io/My-Portfolio-Website/)
 
